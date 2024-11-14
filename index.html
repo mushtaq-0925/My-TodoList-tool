@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do App</h1>
+
+    <!-- Task Input Section -->
+    <div class="task-input-section">
+      <input id="new-task-input" type="text" placeholder="Enter new task">
+      <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="task-filter">
+      <button onclick="showPendingTasks()">Show Pending Tasks</button>
+      <button onclick="showCompletedTasks()">Show Completed Tasks</button>
+      <button onclick="showAllTasks()">Show All Tasks</button>
+    </div>
+
+    <!-- Task Lists -->
+    <div class="task-section" id="pending-section">
+      <h2>Pending Tasks</h2>
+      <ul id="pending-tasks"></ul>
+    </div>
+
+    <div class="task-section" id="completed-section">
+      <h2>Completed Tasks</h2>
+      <ul id="completed-tasks"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
